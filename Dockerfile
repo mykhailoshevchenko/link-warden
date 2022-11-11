@@ -9,3 +9,5 @@ COPY package*.json ./
 
 RUN npm i -g npm@latest \
     && npm ci --legacy-peer-deps
+
+ENTRYPOINT npm run go
