@@ -2,8 +2,8 @@
 FROM node:18-alpine
 
 WORKDIR /home/node
-
-VOLUME /home/node/node_modules
+COPY . /home/node/
+#VOLUME /home/node/node_modules
 
 COPY package*.json ./
 

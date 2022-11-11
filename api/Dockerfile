@@ -6,7 +6,8 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
     PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
 WORKDIR /home/node
-VOLUME /home/node/node_modules
+COPY . /home/node
+#VOLUME /home/node/node_modules
 
 RUN apk add --no-cache \
     chromium \
