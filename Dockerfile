@@ -1,5 +1,5 @@
 # Development image for React app
-FROM node:18-alpine
+FROM public.ecr.aws/bitnami/node:18-debian-11
 
 WORKDIR /home/node
 COPY . /home/node/
