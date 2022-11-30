@@ -1,7 +1,7 @@
 # Production image for api
 # See https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#running-on-alpine
 
-FROM public.ecr.aws/bitnami/node:18-debian-11
+FROM public.ecr.aws/docker/library/node:18-alpine
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
     PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
